@@ -1,0 +1,261 @@
+body {
+  font-family: helvetica;
+  color: #333;
+  margin: 0;
+  font-weight: 300;
+}
+
+header {
+  padding: 0;
+  margin: 5% 15% 0 15%;
+}
+
+header h1 {
+  font-weight: 600;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul{
+  display: inline;
+  float: right;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+
+nav ul li{
+  display: inline;
+  float: left;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #999;
+  text-decoration: none;
+}
+
+nav ul li a h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #333;
+  transition: .2s ease-in-out;
+}
+
+.grid {
+  display: grid;
+  margin: 5% 15%;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-auto-rows: 375px;
+  grid-gap: 20px;
+}
+
+.grid div {
+  border: 1px solid;
+  border-color: #999;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+
+.grid h2{
+  font-size: 13px;
+  font-weight: 100;
+  font-family: Didot;
+  font-style: italic;
+  color: #555;
+  margin: 160px 0 0 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.grid h3{
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+  opacity: 0;
+  letter-spacing: 4px;
+}
+
+.grid p{
+  font-size: 13px;
+  font-weight: 100;
+  color: #333;
+  padding: 10px 50px 0 50px;
+  opacity: 0;
+  margin: 0;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.img1 {
+  background: url(puppetplant.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img2 {
+  background: url(oweek.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+  border-color: #999;
+}
+
+.img3 {
+  background: url(felongeist.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: left;
+}
+
+.img4 {
+  background: url(vizarro.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img5 {
+  background: url(iofit.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img6 {
+  background: url(lastcall.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img1:hover {
+  background: white;
+}
+
+.img2:hover {
+  background: white;
+}
+
+.img3:hover {
+  background: white;
+}
+
+.img4:hover {
+  background: white;
+}
+
+.img5:hover {
+  background: white;
+}
+
+.img6:hover {
+  background: white;
+}
+
+.grid div:hover {
+  border: 1px solid;
+  animation: colorchange 15s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 15s; /* Chrome and Safari */
+    }
+    @keyframes colorchange
+    {
+      0%   {border-color: red;}
+      25%  {border-color: orange;}
+      50%  {border-color: cyan;}
+      75%  {border-color: magenta;}
+      100% {border-color: red;}
+    }
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {border-color: red;}
+      25%  {border-color: orange;}
+      50%  {border-color: cyan;}
+      75%  {border-color: magenta;}
+      100% {border-color: red;}
+    }
+}
+
+
+.grid div:hover p{
+  opacity: 1;
+}
+
+.grid div:hover h2{
+  opacity: 1;
+}
+
+.grid div:hover h3{
+  opacity: 1;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  margin: 0% 15% 5% 15%;
+}
+
+.bio {
+  margin: 5% 15% 5% 15%;
+  color: #333;
+  line-height: 30px;
+}
+
+.bio p{
+  padding: 0 0 20px 0;
+  display: inline;
+}
+
+.bio h5{
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  color: #DC3041;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+}
+
+.bio ul{
+  margin: 3% 0 0 0;
+  padding: 0;
+}
+
+.bio ul li{
+  display: inline;
+  margin: 0 1.5% 0 0;
+  padding: 0;
+}
+
+.bio ul li a {
+  color: #999;
+  text-decoration: none;
+}
+
+.bio ul li a:hover {
+  color: #0382C8;
+  transition: .2s ease-in-out;
+}
